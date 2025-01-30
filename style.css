@@ -1,0 +1,173 @@
+#body {
+    background-color: black;
+}
+
+nav {
+    background-color: black;
+}
+
+nav a:hover {
+    color: #FC4F00 !important;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.cap {
+    color: white;
+}
+
+.container-img {
+    background-image: url(https://cdn.glitch.global/70304c3a-37cd-4ef4-b986-46388fd4dadd/4.jpg?v=1683285217501);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; */
+    min-height: 900px;
+}
+
+h1, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #FC4F00;
+}
+
+.my-list {
+    border: #FC4F00 1px solid;
+    width: 60%;
+}
+
+input {
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+}
+
+#addTip {
+    background-color: #798777;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fourth {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid #FC4F00;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.fourth:hover {
+    background: #FC4F00;
+    box-shadow: 0 0 30px 5px #fc5000d7;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.fourth:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+.fourth::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+.fourth:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+
+#tip {
+    font-family: 'Roboto', sans-serif;
+}
+
+#showTotalAmountToPay {
+    display: flex;
+    flex-direction: column;
+}
+
+#billSplit, #totalTip, #totalAmount {
+    background-color: #FC4F00;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+}
+
+.my-nav, .my-nav-icon {
+    color: white;
+}
+
+.my-nav-icon:hover {
+    color: #FC4F00;
+}
+
+@media all and (max-width: 800px) {
+    .my-list {
+        width: 70%;
+    }
+
+} 
+
+@media all and (max-width: 500px) {
+    .my-list {
+        width: 100%;
+    }
+
+    .featurette-heading-h1 {
+        font-size: 23px;
+    }
+
+    .featurette-heading-h3 {
+        font-size: 19px;
+    } 
+} 
